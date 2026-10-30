@@ -1,0 +1,6 @@
+{
+  "filename": "test_predictions.csv.gz",
+  "rows": 118868,
+  "sha256": "32bfc566357a6cbef9268f118b05a440251299621cde0cfaa764e21c4021051d",
+  "note": "Original complete predictions retained in the research package; regenerate with experiment.py. Gzip archive checksum can differ on rerun due to compression metadata; compare decompressed numerical values."
+}

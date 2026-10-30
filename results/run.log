@@ -1,0 +1,140 @@
+          method  heavy_fraction       mae      rmse  threshold  validation_mae  validation_heavy_fraction  random_matched_mae_mean  random_matched_mae_sd  batch_ms_median  batch_ms_q25  batch_ms_q75
+     Persistence        0.000000 10.071693 20.048119        NaN             NaN                        NaN                      NaN                    NaN         0.567963      0.543686      0.670827
+           Ridge        0.000000 10.233321 19.152655        NaN             NaN                        NaN                      NaN                    NaN        44.694467     43.631657     50.273927
+ Always boosting        1.000000  9.748492 20.130703        NaN             NaN                        NaN                      NaN                    NaN       664.034987    627.531163    677.935054
+ Volatility 0pct        1.000000  9.748492 20.130703       -inf       10.122358                   1.000000                 9.748492           1.806724e-15       803.864511    777.842250    840.908985
+ Volatility 2pct        0.827826  9.902155 20.166037        1.0       10.255591                   0.832415                 9.831450           9.946061e-03       689.978631    666.429291    713.182334
+ Volatility 5pct        0.000000 10.233321 19.152655        inf       10.540642                   0.000000                10.233321           1.806724e-15        49.446903     45.818060     50.308968
+Volatility 10pct        0.000000 10.233321 19.152655        inf       10.540642                   0.000000                10.233321           1.806724e-15        44.999850     43.931436     46.534747
+{
+  "raw_rows": 420768,
+  "eligible_rows": 409180,
+  "features": [
+    "PM2.5",
+    "lag1",
+    "lag2",
+    "lag24",
+    "PM10",
+    "SO2",
+    "NO2",
+    "CO",
+    "O3",
+    "TEMP",
+    "PRES",
+    "DEWP",
+    "RAIN",
+    "WSPM",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "station_Aotizhongxin",
+    "station_Changping",
+    "station_Dingling",
+    "station_Dongsi",
+    "station_Guanyuan",
+    "station_Gucheng",
+    "station_Huairou",
+    "station_Nongzhanguan",
+    "station_Shunyi",
+    "station_Tiantan",
+    "station_Wanliu",
+    "station_Wanshouxigong",
+    "wind_E",
+    "wind_ENE",
+    "wind_ESE",
+    "wind_N",
+    "wind_NE",
+    "wind_NNE",
+    "wind_NNW",
+    "wind_NW",
+    "wind_S",
+    "wind_SE",
+    "wind_SSE",
+    "wind_SSW",
+    "wind_SW",
+    "wind_W",
+    "wind_WNW",
+    "wind_WSW"
+  ],
+  "split_counts": [
+    188119,
+    102193,
+    118868
+  ],
+  "stations": [
+    "Aotizhongxin",
+    "Changping",
+    "Dingling",
+    "Dongsi",
+    "Guanyuan",
+    "Gucheng",
+    "Huairou",
+    "Nongzhanguan",
+    "Shunyi",
+    "Tiantan",
+    "Wanliu",
+    "Wanshouxigong"
+  ],
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "cpu": "x86_64",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "data_sha256": "b04da438b2f331ac0ffd45aebdfec0d20d2367feb5f6948c4b1f7ce1191e33c4",
+  "ridge_training_s": 1.7704734290000488,
+  "ridge_pickle_bytes": 2936,
+  "boosting_training_s": 9.056078577999983,
+  "boosting_pickle_bytes": 563485,
+  "validation_always_boosting_mae": 10.122358113254965,
+  "bootstrap": {
+    "Persistence": {
+      "mae_delta": 0.32320080828242526,
+      "daily_cluster_bootstrap_95ci": [
+        0.14019465993897723,
+        0.48370343459809917
+      ]
+    },
+    "Ridge": {
+      "mae_delta": 0.48482856989207823,
+      "daily_cluster_bootstrap_95ci": [
+        0.26411009458382845,
+        0.6842230186454222
+      ]
+    },
+    "Always boosting": {
+      "mae_delta": 0.0,
+      "daily_cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "Volatility 0pct": {
+      "mae_delta": 0.0,
+      "daily_cluster_bootstrap_95ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "Volatility 2pct": {
+      "mae_delta": 0.1536625998015578,
+      "daily_cluster_bootstrap_95ci": [
+        0.12797928680498716,
+        0.1842429807123232
+      ]
+    },
+    "Volatility 5pct": {
+      "mae_delta": 0.48482856989207823,
+      "daily_cluster_bootstrap_95ci": [
+        0.26411009458382845,
+        0.6842230186454222
+      ]
+    },
+    "Volatility 10pct": {
+      "mae_delta": 0.48482856989207823,
+      "daily_cluster_bootstrap_95ci": [
+        0.26411009458382845,
+        0.6842230186454222
+      ]
+    }
+  }
+}

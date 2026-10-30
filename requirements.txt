@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+scikit-learn==1.8.0
+threadpoolctl
+matplotlib
+python-docx
